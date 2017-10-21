@@ -1,0 +1,121 @@
+
+# i3status configuration file.
+# see "man i3status" for documentation.
+
+# It is important that this file is edited as UTF-8.
+# The following line should contain a sharp s:
+# ß
+# If the above line is not correctly displayed, fix your editor first!
+
+general {
+        colors = true
+        interval = 5
+	color_good = "#a3be8c"
+	color_degraded = "#d08770"
+	color_bad = "#bf616a"
+}
+
+#order += "ipv6"
+order += "disk /"
+#order += "disk /home"
+order += "wireless wlp2s0"
+order += "ethernet enp3s0"
+#order += "run_watch DHCP"
+#order += "run_watch VPNC"
+#order += "run_watch VPN"
+#order += "path_exists VPN"
+order += "battery 0"
+order += "cpu_temperature 0"
+order += "cpu_usage"
+#order += "load"
+order += "volume master"
+order += "tztime local"
+#order += "tztime cdmx"
+
+disk "/" {
+#  format = "%free"
+        format = " %avail"
+}
+
+disk "/home" {
+#	format = "%free"
+        format = " %avail"
+}
+
+wireless wlp2s0 {
+        format_up = "  %essid, %ip" # %quality
+        format_down = "  down"
+}
+
+ethernet enp3s0 {
+        # if you use %speed, i3status requires root privileges
+        format_up = "E: %ip (%speed)"
+        format_down = "E: down"
+}
+
+battery 0 {
+	integer_battery_capacity = true
+	hide_seconds = true
+        format = "%status %percentage %remaining"
+	threshold_type = "percentage"
+	low_threshold = 15
+	status_bat = ""
+	status_chr = ""
+	status_full = ""
+}
+
+run_watch DHCP {
+        pidfile = "/var/run/dhclient*.pid"
+}
+
+run_watch VPN {
+#	pidfile = "/var/run/openvpn.pid"
+        pidfile = "/var/run/openvpn-client/*.pid"
+}
+
+run_watch VPNC {
+#	file containing the PID of a vpnc process
+	pidfile = "/var/run/vpnc/pid"
+
+}
+
+path_exists VPN {
+#	path exists when a VPN tunnel launched by nmcli/nm-applet is active
+        path = "/proc/sys/net/ipv4/conf/tun0"
+}
+
+tztime local {
+#	format = "%d-%m-%Y %H:%M"
+        format = " %d.%m.%Y   %H:%M"
+}
+
+tztime cdmx {
+#	format = "%H:%M:%S %Z"
+        format = " %H:%M"
+        timezone = "America/Mexico_City"
+}
+
+cpu_usage {
+	max_threshold = 95
+	degraded_threshold = 80
+        format = "   %usage"
+}
+
+load {
+  format = "%1min"
+}
+
+volume master {
+#	format = "♪: %volume"
+	format = "   %volume"
+        format_muted = "   (muted) %volume"
+	device = "default"
+	mixer = "Master"
+	mixer_idx = 0
+}
+
+cpu_temperature 0 {
+        format = "T: %degrees°C"
+        max_threshold = "85"
+#        path = "/sys/devices/platform/coretemp.0/temp1_input"
+}
