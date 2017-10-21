@@ -1,0 +1,111 @@
+!
+! scroll
+!
+! jump scrolling
+URxvt*jumpScroll:           true
+! skip scrolling
+URxvt*skipScroll:           false
+! scroll to bottom on output
+URxvt*scrollTtyOutput:      true
+! scroll in relation to buffer (with mouse scroll or Shift+Page Up)
+URxvt*scrollWithBuffer: true
+! scroll to bottom when a non-special key is pressed
+URxvt*scrollTtyKeypress:    false
+! scroll page by page
+URxvt*mouseWheelScrollPage: false
+
+
+URxvt.scrollstyle: plain
+URxvt.scrollBar: off
+URxvt.font: xft:Source Code Pro:size=10
+! URxvt.font: xft:Droid Sans Mono:size=10
+
+URxvt*termName:rxvt-unicode-256color
+URxvt.saveLines: 32
+URxvt.letterSpace: 0
+URxvt.internalBorder: 2
+URxvt*loginShell: true
+Xft.dpi: 96
+Xft.antialias: true
+Xft.rgba: rgb
+Xft.hinting: false
+Xft.hinstyle: hintfull
+Xft.lcdfilter: lcddefault
+URxvt*xftAntialias: true
+
+Urxvt.perl-ext-common: default,matcher,clipboard,url-select,keyboard-select
+URxvt.url-launcher: /usr/bin/firefox
+URxvt.iso14755: False
+URxvt.matcher.button: 1
+
+! special
+*.foreground:   #babdb6
+*.background:   #000000
+*.cursorColor:  #babdb6
+
+! black
+*.color0:       #2e3436
+*.color8:       #555753
+
+! red
+*.color1:       #cc0000
+*.color9:       #ef2929
+
+! green
+*.color2:       #4e9a06
+*.color10:      #8ae234
+
+! yellow
+*.color3:       #c4a000
+*.color11:      #fce94f
+
+! blue
+*.color4:       #3465a4
+*.color12:      #729fcf
+
+! magenta
+*.color5:       #75507b
+*.color13:      #ad7fa8
+
+! cyan
+*.color6:       #06989a
+*.color14:      #34e2e2
+
+! white
+*.color7:       #d3d7cf
+*.color15:      #eeeeec
+
+! ------------------------------------------------------------------------------
+! ROFI Color theme
+! ------------------------------------------------------------------------------
+rofi.color-enabled: true
+!rofi.color-window: #202020, #202020, #202020
+!rofi.color-normal: argb:0202020, #fafafa, #202020, #303030, #ffffff
+rofi.color-active: #303030, #ffffff, #303030, #303030, #ffffff
+rofi.color-urgent: #202020, #ffffff, #202020, #202020, #ffffff
+
+rofi.kb-row-select: Tab
+rofi.kb-row-tab: 
+rofi.kb-row-down: Down
+rofi.line-margin: 0
+rofi.font: Droid Sans Mono 10
+rofi.bw: 0
+!rofi.padding: 1
+rofi.separator-style: dash
+rofi.display-run: Run
+rofi.display-drun: Launch
+rofi.terminal: st
+rofi.run-command: fish -c '{cmd}'
+rofi.run-list-command: 'fish -c functions'
+
+
+rofi.lines: 5
+rofi.eh: 2
+rofi.padding: 200
+rofi.fullscreen: true
+rofi.hide-scrollbar: true
+
+!                  'background', 'border', 'separator'
+rofi.color-window: argb:c82d303b, #7c8389, #1d1f21
+! State:           'bg',     'fg',     'bgalt',  'hlbg',   'hlfg'
+rofi.color-normal: argb:31d1f21, #f3f4f5, argb:31d1f21, argb:31d1f21, #9575cd

@@ -1,0 +1,111 @@
+! ------------------------------------------------------------------------------
+! xft config
+! ------------------------------------------------------------------------------
+
+Xft.dpi: 96
+Xft.antialias: true
+Xft.hinting: true
+Xft.rgba: rgb
+Xft.autohint: false
+Xft.hinstyle: hintfull
+Xft.lcdfilter: lcddefault
+
+! ------------------------------------------------------------------------------
+! user 77 - Mashup colors
+! ------------------------------------------------------------------------------
+
+*foreground:        #B2A191
+*background:        #171717
+*borderColor:       #171717
+*cursorColor:       #C7A551
+!black
+*color0:            #202020
+*color8:            #404040
+!red
+*color1:            #BF3F34
+*color9:            #FF6C5F
+!green
+*color2:            #707D22
+*color10:           #B8CA4B
+!yellow
+*color3:            #BF7A29
+*color11:           #C7A551
+!blue
+*color4:            #627A92
+*color12:           #95B9DE
+!magenta
+*color5:            #75507B
+*color13:           #AD7FA8
+!cyan
+*color6:            #757978
+*color14:           #9FA590
+!white
+*color7:            #B2A191
+*color15:           #E8D0C3 
+
+! ------------------------------------------------------------------------------
+! URxvt settings
+! ------------------------------------------------------------------------------
+
+URxvt*scrollBar: false
+URxvt*internalBorder: 2
+URxvt*borderColor: base00
+
+
+URxvt*jumpScroll:           false
+URxvt*skipScroll:           false
+URxvt*scrollTtyOutput:      true
+URxvt*scrollWithBuffer: true
+URxvt*scrollTtyKeypress:    false
+URxvt*mouseWheelScrollPage: false
+URxvt*scrollstyle: plain
+
+URxvt*termName:rxvt-unicode-256color
+URxvt*saveLines: 1024
+URxvt*letterSpace: 0
+
+URxvt*loginShell: true
+URxvt*xftAntialias: true
+!Urxvt*perl-ext-common: default,matcher,clipboard,url-select,keyboard-select
+URxvt.url-launcher: /usr/bin/firefox
+URxvt.matcher.button: 1
+URxvt*keysym.M-c:   perl:clipboard:copy
+URxvt*keysym.M-C-v: perl:clipboard:paste_escaped
+URxvt*keysym.C-V: perl:clipboard:paste
+URxvt*iso14755: False
+URxvt*perl-ext-common: default,clipboard
+!Urxvt.perl-ext-common: default,matcher,clipboard,url-select,keyboard-select
+
+URxvt*font: xft:Source Code Pro:size=10
+!*font: xft:monospace:size=11
+
+! ------------------------------------------------------------------------------
+! ROFI Color theme
+! ------------------------------------------------------------------------------
+
+rofi.color-enabled: true
+!                  'background', 'border', 'separator'
+!rofi.color-window: #202020, #202020, #202020
+rofi.color-window: argb:c82d303b, #7c8389, #1d1f21
+! State:           'bg',     'fg',     'bgalt',  'hlbg',   'hlfg'
+!rofi.color-normal: argb:0202020, #fafafa, #202020, #303030, #ffffff
+rofi.color-normal: argb:31d1f21, #f3f4f5, argb:31d1f21, argb:31d1f21, #9575cd
+!rofi.color-active: #303030, #ffffff, #303030, #303030, #ffffff
+!rofi.color-urgent: #202020, #ffffff, #202020, #202020, #ffffff
+rofi.kb-row-select: Tab
+rofi.kb-row-tab: 
+rofi.kb-row-down: Down
+rofi.line-margin: 0
+rofi.font: Source Code Pro 10
+rofi.bw: 0
+rofi.padding: 200
+rofi.separator-style: dash
+rofi.display-run: Run
+rofi.display-drun: Launch
+rofi.terminal: st
+rofi.run-command: fish -c '{cmd}'
+rofi.run-list-command: 'fish -c functions'
+rofi.lines: 5
+rofi.eh: 2
+rofi.fullscreen: true
+rofi.hide-scrollbar: true
