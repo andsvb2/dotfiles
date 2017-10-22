@@ -259,14 +259,14 @@ bar {
 ################################################
 
 # set gaps (i3-gaps only)
-gaps inner 5
-gaps outer 2
-smart_gaps on
-smart_borders on
-hide_edge_borders both
+# gaps inner 5
+# gaps outer 2
+# smart_gaps on
+# smart_borders on
+# hide_edge_borders both
 
 # set window borders
-for_window [class="^.*"] border pixel 1
+# for_window [class="^.*"] border pixel 1
 
 # focus should not follow mouse cursor
 focus_follows_mouse no
