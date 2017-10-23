@@ -1,0 +1,14 @@
+[user]
+	email = svieira.anderson@gmail.com
+	name = Anderson S. Vieira
+	username = andsvb2
+[gc]
+	autoDetach = false
+[commit]
+	gpgSign = false
+[core]
+	editor = emacsclient -t
+[color]
+	ui = true
+[credential]
+	helper = cache --timeout=3600
