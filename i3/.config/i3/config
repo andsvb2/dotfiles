@@ -181,7 +181,7 @@ bindsym XF86AudioPrev exec playerctl previous
 # bindsym $mod+l exec $LOCK_SCRIPT
 # exec --no-startup-id "xautolock -time 2 -locker '$LOCK_SCRIPT' -notify 5 -notifier 'xset dpms force off' &"
 bindsym $mod+l exec i3lock-fancy -g -- maim
-exec --no-startup-id "xautolock -time 3 -locker 'i3lock-fancy -g --maim' -notify 5 -notifier 'xset dpms force off' &"
+exec --no-startup-id "xautolock -time 3 -locker 'i3lock-fancy -g -- maim' -notify 5 -notifier 'xset dpms force off' &"
 
 # Thunar
 bindsym $mod+t exec thunar
