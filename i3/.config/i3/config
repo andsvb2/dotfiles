@@ -266,7 +266,7 @@ bar {
 # hide_edge_borders both
 
 # set window borders
-# for_window [class="^.*"] border pixel 1
+for_window [class="^.*"] border pixel 1
 
 # focus should not follow mouse cursor
 focus_follows_mouse no
