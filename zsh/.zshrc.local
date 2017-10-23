@@ -358,3 +358,9 @@ alias E="SUDO_EDITOR=\"emacsclient -t -a emacs\" sudoedit"
 alias e="emacsclient -t"
 alias lin-gog="lgogdownloader --download --game all --platform linux"
 alias all-gog="lgogdownloader --download --game all --platform linux+windows"
+
+#######################################################################################
+###  KEYCHAIN
+#######################################################################################
+
+eval $(keychain --eval --quiet ~/.ssh/id_rsa)
