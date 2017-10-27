@@ -363,4 +363,4 @@ alias all-gog="lgogdownloader --download --game all --platform linux+windows"
 ###  KEYCHAIN
 #######################################################################################
 
-eval $(keychain --eval --quiet ~/.ssh/id_rsa)
+eval $(keychain --eval --systemd --quiet ~/.ssh/id_rsa)
