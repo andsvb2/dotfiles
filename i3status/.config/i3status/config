@@ -29,8 +29,8 @@ order += "cpu_temperature 0"
 order += "cpu_usage"
 #order += "load"
 order += "volume master"
-order += "tztime local"
-#order += "tztime cdmx"
+# order += "tztime local"
+order += "tztime cdmx"
 
 disk "/" {
 #  format = "%free"
@@ -91,7 +91,8 @@ tztime local {
 
 tztime cdmx {
 #	format = "%H:%M:%S %Z"
-        format = " %H:%M"
+        # format = " %H:%M"
+        format = " %d.%m.%Y   %H:%M"
         timezone = "America/Mexico_City"
 }
 
