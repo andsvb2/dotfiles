@@ -162,8 +162,8 @@ bindsym $mod+r mode "resize"
 #  Special Key Bindings
 ##################################################
 
-bindsym XF86AudioRaiseVolume exec amixer -q sset Master 1%+
-bindsym XF86AudioLowerVolume exec amixer -q sset Master 1%-
+bindsym XF86AudioRaiseVolume exec amixer -q sset Master 5%+
+bindsym XF86AudioLowerVolume exec amixer -q sset Master 5%-
 bindsym XF86AudioMute exec amixer -q sset Master toggle
 #bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5%
 #bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5%
@@ -181,7 +181,7 @@ bindsym XF86AudioPrev exec playerctl previous
 # bindsym $mod+l exec $LOCK_SCRIPT
 # exec --no-startup-id "xautolock -time 2 -locker '$LOCK_SCRIPT' -notify 5 -notifier 'xset dpms force off' &"
 bindsym $mod+l exec i3lock-fancy -g -- maim
-exec --no-startup-id "xautolock -time 3 -locker 'i3lock-fancy -g -- maim' -notify 5 -notifier 'xset dpms force off' &"
+# exec --no-startup-id "xautolock -time 3 -locker 'i3lock-fancy -g -- maim' -notify 5 -notifier 'xset dpms force off' &"
 
 # Thunar
 bindsym $mod+t exec thunar
@@ -379,3 +379,6 @@ exec --no-startup-id redshift-gtk
 
 # inicia o urxvt no modo daemon
 exec --no-startup-id urxvtd -q -o -f
+
+# inicia o daemon do emacs
+exec --no-startup-id emacs --daemon
