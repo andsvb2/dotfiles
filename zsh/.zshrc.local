@@ -350,9 +350,12 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 ###  ALIASES
 #######################################################################################
 
-alias up-arch="sudo reflector --verbose -c BR -l 15 -f 7 --sort rate --save /etc/pacman.d/mirrorlist && cat /etc/pacman.d/mirrorlist && sudo pacman -Syyu && sudo aura -Akuax"
+# alias up-arch="sudo reflector --verbose -c BR -l 15 -f 7 --sort rate --save /etc/pacman.d/mirrorlist && cat /etc/pacman.d/mirrorlist && sudo pacman -Syyu && sudo aura -Akuax"
+alias up-arch="sudo reflector --verbose -l 15 -f 7 --sort rate --save /etc/pacman.d/mirrorlist && cat /etc/pacman.d/mirrorlist && sudo pacman -Syyu && sudo aura -Akuax"
+# alias up-arch="sudo reflector --verbose -c MX -l 15 -f 7 --sort rate --save /etc/pacman.d/mirrorlist && cat /etc/pacman.d/mirrorlist && sudo pacman -Syyu && sudo aura -Akuax"
 alias up-texlive="tlmgr update --list && sudo tlmgr update --self --all"
-alias orphan='sudo pacman -Rsn $(pacman -Qqdt)'
+# alias orphan='sudo pacman -Rsn $(pacman -Qqdt)'
+alias orphan='sudo aura -Oj'
 #alias E="SUDO_EDITOR=\"emacsclient\" sudo -e"
 alias E="SUDO_EDITOR=\"emacsclient -t -a emacs\" sudoedit"
 alias e="emacsclient -t"
@@ -363,4 +366,4 @@ alias all-gog="lgogdownloader --download --game all --platform linux+windows"
 ###  KEYCHAIN
 #######################################################################################
 
-eval $(keychain --eval --quiet ~/.ssh/id_rsa)
+eval $(keychain --eval --systemd --quiet ~/.ssh/id_rsa)
