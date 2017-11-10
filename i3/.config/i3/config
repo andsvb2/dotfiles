@@ -369,7 +369,7 @@ exec --no-startup-id variety
 #exec feh --randomize --bg-fill ~/Imagens/wallpapers/*
 
 # toggle between keyboard layouts
-exec --no-startup-id "setxkbmap -layout br,latam,us_intl -option grp:alts_toggle"
+exec --no-startup-id "setxkbmap -layout br,latam -option grp:alts_toggle"
 
 # redshift
 exec --no-startup-id redshift-gtk
