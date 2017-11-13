@@ -22,6 +22,9 @@ SSH_KEY_PATH     DEFAULT=@{HOME}/.ssh/id_rsa
 # SSH_AUTH_SOCK DEFAULT="${XDG_RUNTIME_DIR}/ssh-agent.socket"
 # GSM_SKIP_SSH_AGENT_WORKAROUND DEFAULT=1
 
+# Temas GTK-QT
+QT_QPA_PLATFORMTHEME    DEFAULT=gtk2
+
 # GnuPG
 # You can reuse variables you already defined
 GNUPGHOME        DEFAULT=${XDG_CONFIG_HOME}/gnupg
