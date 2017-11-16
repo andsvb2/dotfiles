@@ -27,10 +27,10 @@ QT_QPA_PLATFORMTHEME    DEFAULT=gtk2
 
 # GnuPG
 # You can reuse variables you already defined
-GNUPGHOME        DEFAULT=${XDG_CONFIG_HOME}/gnupg
+# GNUPGHOME        DEFAULT=${XDG_CONFIG_HOME}/gnupg
 
-#Incorrect: you can't reuse other variables in VARIABLE=VALUE pair
-#GNUPGHOME=${XDG_CONFIG_HOME}/gnupg
+# Incorrect: you can't reuse other variables in VARIABLE=VALUE pair
+# GNUPGHOME=${XDG_CONFIG_HOME}/gnupg
 
 #Incorrect: missing {}
 # GNUPGHOME        DEFAULT=$XDG_CONFIG_HOME/gnupg
