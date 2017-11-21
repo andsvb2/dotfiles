@@ -301,6 +301,7 @@ for_window [class="(?i)Steam"] move to workspace $WS_GAME
 #for_window [class="Steam"] floating enable
 for_window [class="Nimble Quest"] floating enable
 for_window [class="Toplevel"] floating enable
+for_window [class="Firefox" title="Sobre o Mozilla Firefox"] floating enable
 for_window [class="Variety" title="Variety Recent Downloads"] floating enable
 for_window [class="Variety" title="Variety Preferences"] floating enable
 for_window [class="Variety" title="Variety History"] floating enable
