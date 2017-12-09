@@ -37,6 +37,7 @@ case $session in
     i3|i3wm           ) exec i3;;
     kde               ) exec startkde;;
     xfce|xfce4        ) exec startxfce4;;
+    gnome             ) exec gnome-session;;
     # No known session, try to run it as command
     *                 ) exec $1;;
 esac
