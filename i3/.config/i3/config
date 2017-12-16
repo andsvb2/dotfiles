@@ -364,9 +364,9 @@ exec xrdb ~/.Xresources
 # exec --no-startup-id nitrogen --restore
 
 # set wallpaper using variety
-exec --no-startup-id variety
+# exec --no-startup-id variety
 # Papel de parede
-#exec feh --randomize --bg-fill ~/Imagens/wallpapers/*
+exec feh --randomize --bg-fill ~/Imagens/wallpapers/*
 
 # toggle between keyboard layouts
 exec --no-startup-id "setxkbmap -layout br,latam -option grp:alts_toggle"
