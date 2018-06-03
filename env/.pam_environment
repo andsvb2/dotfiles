@@ -40,6 +40,6 @@ LANG            DEFAULT=pt_BR.UTF-8
 LC_ALL          DEFAULT=${LANG}
 
 # Configurando caminhos
-# PATH           DEFAULT=/usr/local/texlive/2017/bin/x86_64-linux:${PATH}
-# MANPATH        DEFAULT=/usr/local/texlive/2017/texmf-dist/doc/man
-# INFOPATH       DEFAULT=/usr/local/texlive/2017/texmf-dist/doc/info
+PATH           DEFAULT=/usr/local/texlive/2018/bin/x86_64-linux:${PATH}
+MANPATH        DEFAULT=/usr/local/texlive/2018/texmf-dist/doc/man
+INFOPATH       DEFAULT=/usr/local/texlive/2018/texmf-dist/doc/info

@@ -343,6 +343,9 @@ fi
 ### highlighting, pkgfile script, aliases and of course, the prompt. These must be
 ### done in order.
 
+# Source zsh-autosuggestions
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+
 # Syntax highlighting plugin
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
@@ -361,6 +364,7 @@ alias pmsyu='sudo pacman -Syyu --color=auto'
 alias pacman='pacman --color auto'
 alias update='sudo pacman -Syyu && sudo aura -Akuax'
 alias mirrors='sudo reflector --score 100 --fastest 25 --sort rate --save /etc/pacman.d/mirrorlist --verbose'
+alias convert_tex-docx="pandoc --reference-doc=/home/anderson/LaTeX/doc-pandoc/referencia.docx cumbia.tex --bibliography=bibliografia.bib -o ./doc/projeto.docx"
 
 # neofetch
 
@@ -368,4 +372,4 @@ alias mirrors='sudo reflector --score 100 --fastest 25 --sort rate --save /etc/p
 ###  KEYCHAIN
 #######################################################################################
 
-eval $(keychain --eval --systemd --quiet --noask ~/.ssh/id_rsa)
+# eval $(keychain --eval --systemd --quiet --noask ~/.ssh/id_rsa)
