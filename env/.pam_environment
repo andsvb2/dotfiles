@@ -12,9 +12,10 @@ ICEAUTHORITY     DEFAULT=${XDG_RUNTIME_DIR}/ICEauthority
 EDITOR           DEFAULT="emacsclient -t"
 VISUAL           DEFAULT="emacsclient -t"
 ALTERNATE_EDITOR DEFAULT=nano
-TERMINAL         DEFAULT=urxvtc
+TERMINAL         DEFAULT=xfce4-terminal
 PAGER            DEFAULT=less
 BROWSER          DEFAULT=firefox
+DIFFPROG				 DEFAULT=meld
 
 # SSH
 SSH_KEY_PATH     DEFAULT=@{HOME}/.ssh/id_rsa
