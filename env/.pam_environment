@@ -38,7 +38,10 @@ QT_QPA_PLATFORMTHEME    DEFAULT=gtk3
 
 # Locale
 LANG            DEFAULT=pt_BR.UTF-8
-LC_ALL          DEFAULT=${LANG}
+LANGUAGE				DEFAULT=pt_BR:en_US:es_PE
+LC_TIME					DEFAULT=en_DK.UTF-8
+LC_COLLATE			DEFAULT=C
+# LC_ALL          DEFAULT=${LANG}
 
 # Configurando caminhos
 PATH           DEFAULT=/usr/local/texlive/2018/bin/x86_64-linux:${PATH}
