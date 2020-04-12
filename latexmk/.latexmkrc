@@ -140,7 +140,7 @@ $bibtex_silent_switch = '-terse';
 # Whether to run bibtex to update bbl files: 0 means never run bibtex, 1 means
 # run bibtex only if the source files exist and the bbl files are out of date,
 # 2 means run bibtex whenever the bbl files are out of date.
-$bibtex_use = 1;
+$bibtex_use = 2;
 
 # A custom dependency list; see the man page for details
 # @cus_dep_list = ();
