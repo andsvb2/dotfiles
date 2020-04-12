@@ -2,10 +2,11 @@
 	email = svieira.anderson@gmail.com
 	name = Anderson S. Vieira
 	username = andsvb2
+	signingKey = 00EB730D50DEFBDE1D290A44CEE06754E4FAD3ED
 [gc]
 	autoDetach = false
 [commit]
-	gpgSign = false
+	gpgsign = true
 [core]
 	editor = emacsclient -t
 [color]
@@ -20,3 +21,5 @@
     	prompt = false
 [difftool "meld"]
     	cmd = meld "$LOCAL" "$REMOTE"
+[tag]
+	forceSignAnnotated = true
