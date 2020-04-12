@@ -42,7 +42,7 @@ $pdf_previewer = 'evince %O %S';
 # 3 = Create a PDF file with dvipdf
 # 4 = Create a PDF file with lualatex
 # 5 = Create a PDF file with xelatex
-$pdf_mode = 1;
+$pdf_mode = 5;
 
 # Extra file extensions to remove when cleaning
 $clean_ext = 'synctex.gz synctex.gz(busy) synctex(busy) acn acr alg aux bbl bcf blg brf fdb_latexmk fls glg glo gls idx ilg ind ist lof log lot nav out run.xml snm toc tdo upa upb dvi';
