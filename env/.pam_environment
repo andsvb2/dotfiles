@@ -24,7 +24,7 @@ SSH_KEY_PATH     DEFAULT=@{HOME}/.ssh/id_rsa
 # GSM_SKIP_SSH_AGENT_WORKAROUND DEFAULT=1
 
 # Temas GTK-QT
-QT_QPA_PLATFORMTHEME    DEFAULT=gtk2
+QT_QPA_PLATFORMTHEME    DEFAULT=gtk3
 
 # GnuPG
 # You can reuse variables you already defined
