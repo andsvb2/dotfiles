@@ -44,6 +44,6 @@ LC_COLLATE			DEFAULT=C
 # LC_ALL          DEFAULT=${LANG}
 
 # Configurando caminhos
-PATH           DEFAULT=/usr/local/texlive/2018/bin/x86_64-linux:${PATH}
-MANPATH        DEFAULT=/usr/local/texlive/2018/texmf-dist/doc/man
-INFOPATH       DEFAULT=/usr/local/texlive/2018/texmf-dist/doc/info
+PATH           DEFAULT=${PATH}:/usr/local/texlive/2020/bin/x86_64-linux
+MANPATH        DEFAULT=${MANPATH}:/usr/local/texlive/2020/texmf-dist/doc/man
+INFOPATH       DEFAULT=${INFOPATH}:/usr/local/texlive/2020/texmf-dist/doc/info
