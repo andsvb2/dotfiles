@@ -12,7 +12,7 @@ export XDG_DATA_HOME="$HOME/.local/share"
 
 ### Tools
 export EDITOR='emacsclient -t'
-export VISUAL='emacsclient -t'
+export VISUAL='emacsclient'
 export HGMERGE='emacsclient -t'
 export ALTERNATE_EDITOR='nano'
 export TERMINAL='xfce4-terminal'

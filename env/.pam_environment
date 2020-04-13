@@ -10,7 +10,7 @@ ICEAUTHORITY     DEFAULT=${XDG_RUNTIME_DIR}/ICEauthority
 # Tools
 # You can define variables as VARIABLE=VALUE pair
 EDITOR           DEFAULT="emacsclient -t"
-VISUAL           DEFAULT="emacsclient -t"
+VISUAL           DEFAULT="emacsclient"
 ALTERNATE_EDITOR DEFAULT=nano
 TERMINAL         DEFAULT=xfce4-terminal
 PAGER            DEFAULT=less
