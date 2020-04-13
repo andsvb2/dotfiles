@@ -334,3 +334,35 @@ fi
 #vimhelp ()    { vim -c "help $1" -c on -c "au! VimEnter *" }
 
 ## END OF FILE #################################################################
+
+## Comeco da customizacao
+## Copiado do manjaro-zsh-config
+
+## Alias section
+alias cp="cp -i"                                                # Confirm before overwriting something
+alias df='df -h'                                                # Human-readable sizes
+alias free='free -m'                                            # Show sizes in MB
+alias gitu='git add . && git commit && git push'
+alias updist='sudo pacman-mirrors -f 5 && sudo pacman -Syyuu && yay -Syyuu --aur'
+alias uptex='sudo tlmgr --repository ctan update --self --all'
+alias meldiff='sudo DIFFPROG=meld pacdiff'
+alias E="SUDO_EDITOR=\"emacsclient -t -a emacs\" sudoedit"
+alias e="emacsclient -t"
+# alias convert_tex-docx="pandoc --reference-doc=/home/anderson/LaTeX/doc-pandoc/referencia.docx cumbia.tex --bibliography=bibliografia.bib -o ./doc/projeto.docx"
+
+## Plugins section: Enable fish style features
+# Use syntax highlighting
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# Use history substring search
+source /usr/share/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
+# bind UP and DOWN arrow keys to history substring search
+zmodload zsh/terminfo
+bindkey "$terminfo[kcuu1]" history-substring-search-up
+bindkey "$terminfo[kcud1]" history-substring-search-down
+bindkey '^[[A' history-substring-search-up
+bindkey '^[[B' history-substring-search-down
+
+# Use autosuggestion
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=20
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=8'
