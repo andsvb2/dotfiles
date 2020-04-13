@@ -24,7 +24,7 @@ export GTK2_RC_FILES="$HOME/.gtkrc-2.0"
 #  Localization
 
 export LANG="pt_BR.UTF-8"
-export LANGUAGE="pt_BR:en_US:es_PE"
+# export LANGUAGE="pt_BR:en_US:es_PE"
 export LC_CTYPE="pt_BR.UTF-8"
 export LC_NUMERIC="pt_BR.UTF-8"
 export LC_TIME="en_DK.UTF-8"
