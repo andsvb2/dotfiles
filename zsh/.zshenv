@@ -6,30 +6,36 @@
 ### NOTE: Variaveis foram definidas em ~/.pam_environment 
 
 ### XDG Base Directories
-# export XDG_CACHE_HOME='/home/anderson/.cache'
-# export XDG_CONFIG_HOME='/home/anderson/.config'
-# export XDG_DATA_HOME='/home/anderson/.local/share'
+export XDG_CACHE_HOME="$HOME/.cache"
+export XDG_CONFIG_HOME="$HOME/.config"
+export XDG_DATA_HOME="$HOME/.local/share"
 
 ### Tools
-# export EDITOR='emacsclient -t'
-# export VISUAL='emacsclient -t'
-# export HGMERGE='emacsclient -t'
-# export ALTERNATE_EDITOR='nano'
-# export TERMINAL='xfce4-terminal'
+export EDITOR='emacsclient -t'
+export VISUAL='emacsclient -t'
+export HGMERGE='emacsclient -t'
+export ALTERNATE_EDITOR='nano'
+export TERMINAL='xfce4-terminal'
+export BROWSER='firefox'
+
+### QT e GTK
+export QT_QPA_PLATFORMTHEME="qt5ct"
+export QT_AUTO_SCREEN_SCALE_FACTOR=0
+export GTK2_RC_FILES="$HOME/.gtkrc-2.0"
 
 #######################################################################################
 ###  LOCALIZATION
 #######################################################################################
 
-# export LANG="pt_BR.UTF-8"
-# export LANGUAGE="pt_BR:en_US:es_PE"
-# export LC_CTYPE="pt_BR.UTF-8"
-# export LC_COLLATE="C"
-# export LC_TIME="en_DK.UTF-8"
-# export LC_NUMERIC="pt_BR.UTF-8"
-# export LC_MONETARY="pt_BR.UTF-8"
-# export LC_MESSAGES="pt_BR.UTF-8"
-
+export LANG="pt_BR.UTF-8"
+export LANGUAGE="pt_BR:en_US:es_PE"
+export LC_CTYPE="pt_BR.UTF-8"
+export LC_COLLATE="C"
+export LC_TIME="en_DK.UTF-8"
+export LC_NUMERIC="pt_BR.UTF-8"
+export LC_MONETARY="pt_BR.UTF-8"
+export LC_MESSAGES="pt_BR.UTF-8"
+# export LC_ALL="pt_BR.UTF-8"
 
 #######################################################################################
 ###  EXECUTABLES PATH
