@@ -402,66 +402,65 @@ you should place your code here."
  '(ebib-bib-search-dirs (quote ("~/LaTeX/and-tese/bib/" "~/LaTeX/biblatex")))
  '(ebib-bibtex-dialect (quote biblatex))
  '(ebib-extra-fields
-   (quote
-    ((BibTeX "crossref" "annote" "abstract" "keywords" "file" "timestamp" "url" "doi")
-     (biblatex "crossref" "annotation" "abstract" "keywords" "file" "timestamp" "url" "doi"))))
+	 (quote
+		((BibTeX "crossref" "annote" "abstract" "keywords" "file" "timestamp" "url" "doi")
+		 (biblatex "crossref" "annotation" "abstract" "keywords" "file" "timestamp" "url" "doi"))))
  '(ebib-file-associations (quote (("pdf" . "evince") ("ps" . "gv"))))
  '(ebib-hidden-fields
-   (quote
-    ("addendum" "afterword" "annotator" "bookauthor" "booksubtitle" "booktitleaddon" "commentator" "edition" "editora" "editorb" "editorc" "eid" "eprint" "eprintclass" "eprinttype" "eventdate" "eventtitle" "foreword" "holder" "howpublished" "introduction" "isbn" "isrn" "issn" "issue" "issuesubtitle" "issuetitle" "journalsubtitle" "language" "location" "mainsubtitle" "maintitle" "maintitleaddon" "month" "origlanguage" "pagetotal" "part" "remark" "timestamp" "titleaddon" "translator" "urldate" "venue" "version" "volumes")))
+	 (quote
+		("addendum" "afterword" "annotator" "bookauthor" "booksubtitle" "booktitleaddon" "commentator" "edition" "editora" "editorb" "editorc" "eid" "eprint" "eprintclass" "eprinttype" "eventdate" "eventtitle" "foreword" "holder" "howpublished" "introduction" "isbn" "isrn" "issn" "issue" "issuesubtitle" "issuetitle" "journalsubtitle" "language" "location" "mainsubtitle" "maintitle" "maintitleaddon" "month" "origlanguage" "pagetotal" "part" "remark" "timestamp" "titleaddon" "translator" "urldate" "venue" "version" "volumes")))
  '(ebib-preload-bib-files
-   (quote
-    ("~/LaTeX/biblatex/bibliografia-principal.bib" "~/LaTeX/and-tese/bib/bibliografia-tese.bib" "~/LaTeX/and-tese/bib/zotero-sempre-atualizado.bib")))
+	 (quote
+		("~/LaTeX/biblatex/bibliografia-principal.bib" "~/LaTeX/and-tese/bib/bibliografia-tese.bib" "~/LaTeX/and-tese/bib/zotero-sempre-atualizado.bib")))
  '(ebib-timestamp-format "%Y-%m-%dT%T")
  '(evil-want-Y-yank-to-eol nil)
  '(global-visual-fill-column-mode nil)
  '(highlight-changes-colors (quote ("#d33682" "#6c71c4")))
  '(highlight-symbol-colors
-   (--map
-    (solarized-color-blend it "#002b36" 0.25)
-    (quote
-     ("#b58900" "#2aa198" "#dc322f" "#6c71c4" "#859900" "#cb4b16" "#268bd2"))))
+	 (--map
+		(solarized-color-blend it "#002b36" 0.25)
+		(quote
+		 ("#b58900" "#2aa198" "#dc322f" "#6c71c4" "#859900" "#cb4b16" "#268bd2"))))
  '(highlight-symbol-foreground-color "#93a1a1")
  '(highlight-tail-colors
-   (quote
-    (("#073642" . 0)
-     ("#546E00" . 20)
-     ("#00736F" . 30)
-     ("#00629D" . 50)
-     ("#7B6000" . 60)
-     ("#8B2C02" . 70)
-     ("#93115C" . 85)
-     ("#073642" . 100))))
+	 (quote
+		(("#073642" . 0)
+		 ("#546E00" . 20)
+		 ("#00736F" . 30)
+		 ("#00629D" . 50)
+		 ("#7B6000" . 60)
+		 ("#8B2C02" . 70)
+		 ("#93115C" . 85)
+		 ("#073642" . 100))))
  '(hl-bg-colors
-   (quote
-    ("#7B6000" "#8B2C02" "#990A1B" "#93115C" "#3F4D91" "#00629D" "#00736F" "#546E00")))
+	 (quote
+		("#7B6000" "#8B2C02" "#990A1B" "#93115C" "#3F4D91" "#00629D" "#00736F" "#546E00")))
  '(hl-fg-colors
-   (quote
-    ("#002b36" "#002b36" "#002b36" "#002b36" "#002b36" "#002b36" "#002b36" "#002b36")))
- '(hl-paren-colors (quote ("#2aa198" "#b58900" "#268bd2" "#6c71c4" "#859900")) t)
+	 (quote
+		("#002b36" "#002b36" "#002b36" "#002b36" "#002b36" "#002b36" "#002b36" "#002b36")))
+ '(hl-paren-colors (quote ("#2aa198" "#b58900" "#268bd2" "#6c71c4" "#859900")))
  '(indent-tabs-mode t)
  '(magit-diff-refine-hunk (quote all))
  '(nrepl-message-colors
-   (quote
-    ("#dc322f" "#cb4b16" "#b58900" "#546E00" "#B4C342" "#00629D" "#2aa198" "#d33682" "#6c71c4")))
- '(package-selected-packages
-   (quote
-    (orgit iedit markdown-mode web-beautify livid-mode skewer-mode simple-httpd json-mode json-snatcher json-reformat js2-refactor multiple-cursors js2-mode js-doc company-tern dash-functional tern coffee-mode git-link biblio biblio-core yasnippet deft org-category-capture use-package org-mime neotree helm-themes visual-fill-column unfill smeargle org-bullets hungry-delete helm-ag gnuplot git-messenger anzu avy magit-popup alert helm-make evil-mc hydra tablist writeroom-mode uuidgen persp-mode parsebib pdf-tools org-present link-hint flyspell-correct-helm evil-magit ebib dumb-jump with-editor elisp-slime-nav popwin org-download org-plus-contrib lv helm-swoop flyspell-correct which-key evil-exchange ace-window ace-link request projectile evil-nerd-commenter async evil git-commit company org-ref helm-core magit transient expand-region undo-tree smartparens ivy helm powerline auctex)))
+	 (quote
+		("#dc322f" "#cb4b16" "#b58900" "#546E00" "#B4C342" "#00629D" "#2aa198" "#d33682" "#6c71c4")))
+ '(package-selected-packages (quote (auctex)))
  '(pos-tip-background-color "#073642")
  '(pos-tip-foreground-color "#93a1a1")
  '(smartrep-mode-line-active-bg (solarized-color-blend "#859900" "#073642" 0.2))
  '(term-default-bg-color "#002b36")
  '(term-default-fg-color "#839496")
  '(vc-annotate-background-mode nil)
+ '(vc-follow-symlinks t)
  '(visual-fill-column-center-text t)
  '(weechat-color-list
-   (quote
-    (unspecified "#002b36" "#073642" "#990A1B" "#dc322f" "#546E00" "#859900" "#7B6000" "#b58900" "#00629D" "#268bd2" "#93115C" "#d33682" "#00736F" "#2aa198" "#839496" "#657b83")))
+	 (quote
+		(unspecified "#002b36" "#073642" "#990A1B" "#dc322f" "#546E00" "#859900" "#7B6000" "#b58900" "#00629D" "#268bd2" "#93115C" "#d33682" "#00736F" "#2aa198" "#839496" "#657b83")))
  '(x-select-enable-clipboard-manager nil)
  '(xterm-color-names
-   ["#073642" "#dc322f" "#859900" "#b58900" "#268bd2" "#d33682" "#2aa198" "#eee8d5"])
+	 ["#073642" "#dc322f" "#859900" "#b58900" "#268bd2" "#d33682" "#2aa198" "#eee8d5"])
  '(xterm-color-names-bright
-   ["#002b36" "#cb4b16" "#586e75" "#657b83" "#839496" "#6c71c4" "#93a1a1" "#fdf6e3"]))
+	 ["#002b36" "#cb4b16" "#586e75" "#657b83" "#839496" "#6c71c4" "#93a1a1" "#fdf6e3"]))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
