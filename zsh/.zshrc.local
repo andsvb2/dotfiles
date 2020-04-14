@@ -348,6 +348,7 @@ alias uptex='sudo tlmgr --repository ctan update --self --all'
 alias meldiff='sudo DIFFPROG=meld pacdiff'
 alias E="SUDO_EDITOR=\"emacsclient -t -a emacs\" sudoedit"
 alias e="emacsclient -t"
+alias cd-tese="cd ~/LaTeX/and-tese"
 # alias convert_tex-docx="pandoc --reference-doc=/home/anderson/LaTeX/doc-pandoc/referencia.docx cumbia.tex --bibliography=bibliografia.bib -o ./doc/projeto.docx"
 
 ## Plugins section: Enable fish style features
