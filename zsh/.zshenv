@@ -48,14 +48,14 @@ fi
 
 # automatically remove duplicates from these arrays
 # adiciona entrada para infopath
-typeset -U infopath infopath
-path=("$HOME/.local/bin" "/usr/local/texlive/2020/bin/x86_64-linux" "$path[@]")
-export PATH
+# typeset -U infopath infopath
+# path=("$HOME/.local/bin" "/usr/local/texlive/2020/bin/x86_64-linux" "$path[@]")
+# export PATH
 
-typeset -U manpath
-manpath=("/usr/local/texlive/2020/texmf-dist/doc/man" "$manpath[@]")
-export MANPATH
+# typeset -U manpath
+# manpath=("/usr/local/texlive/2020/texmf-dist/doc/man" "$manpath[@]")
+# export MANPATH
 
-typeset -U infopath
-manpath=("/usr/local/texlive/2020/texmf-dist/doc/info" "$infopath[@]")
-export INFOPATH
+# typeset -U infopath
+# manpath=("/usr/local/texlive/2020/texmf-dist/doc/info" "$infopath[@]")
+# export INFOPATH
