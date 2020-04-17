@@ -444,7 +444,9 @@ you should place your code here."
  '(nrepl-message-colors
    (quote
     ("#dc322f" "#cb4b16" "#b58900" "#546E00" "#B4C342" "#00629D" "#2aa198" "#d33682" "#6c71c4")))
- '(package-selected-packages (quote (orgit helm auctex)))
+ '(package-selected-packages
+   (quote
+    (evil-nerd-commenter org-mime markdown-mode helm-bibtex bibtex-completion biblio biblio-core orgit helm auctex)))
  '(pos-tip-background-color "#073642")
  '(pos-tip-foreground-color "#93a1a1")
  '(smartrep-mode-line-active-bg (solarized-color-blend "#859900" "#073642" 0.2))
