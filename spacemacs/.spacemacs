@@ -411,7 +411,7 @@ you should place your code here."
     ("addendum" "afterword" "annotator" "bookauthor" "booksubtitle" "booktitleaddon" "commentator" "edition" "editora" "editorb" "editorc" "eid" "eprint" "eprintclass" "eprinttype" "eventdate" "eventtitle" "foreword" "holder" "howpublished" "introduction" "isbn" "isrn" "issn" "issue" "issuesubtitle" "issuetitle" "journalsubtitle" "language" "location" "mainsubtitle" "maintitle" "maintitleaddon" "month" "origlanguage" "pagetotal" "part" "remark" "timestamp" "titleaddon" "translator" "urldate" "venue" "version" "volumes")))
  '(ebib-preload-bib-files
    (quote
-    ("~/LaTeX/biblatex/bibliografia-principal.bib" "~/LaTeX/and-tese/bib/bibliografia-tese.bib" "~/LaTeX/and-tese/bib/zotero-sempre-atualizado.bib")))
+    ("~/LaTeX/and-tese/bib/bibliografia-tese.bib" "~/LaTeX/and-tese/bib/zotero-sempre-atualizado.bib")))
  '(ebib-timestamp-format "%Y-%m-%dT%T")
  '(evil-want-Y-yank-to-eol nil)
  '(global-visual-fill-column-mode nil)
