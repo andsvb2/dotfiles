@@ -336,6 +336,7 @@ you should place your code here."
 	(add-hook 'org-mode-hook 'visual-line-mode)
 	(add-hook 'org-mode-hook 'visual-fill-column-mode)
 	(add-hook 'TeX-mode-hook 'writeroom-mode)
+	(add-hook 'text-mode-hook 'abbrev-mode)
   ;; (add-hook 'TeX-mode-hook 'spacemacs/toggle-auto-fill-mode-off)
 	(setq org-directory "~/Dropbox/Documentos/org/")
   (setq org-ref-default-bibliography '("~/LaTeX/biblatex/bibliografia-principal.bib"))
@@ -446,7 +447,7 @@ you should place your code here."
     ("#dc322f" "#cb4b16" "#b58900" "#546E00" "#B4C342" "#00629D" "#2aa198" "#d33682" "#6c71c4")))
  '(package-selected-packages
    (quote
-    (org-ref ivy ebib define-word aggressive-indent avy log4e org-plus-contrib evil magit evil-nerd-commenter org-mime markdown-mode helm-bibtex bibtex-completion biblio biblio-core orgit helm auctex)))
+    (org-ref org-mime evil-matchit ace-link writeroom-mode visual-fill-column org-download markdown-toc markdown-mode helm-ag projectile pdf-tools tablist helm-bibtex bibtex-completion org-plus-contrib transient js2-mode helm magit dumb-jump company ivy helm-core auctex)))
  '(pos-tip-background-color "#073642")
  '(pos-tip-foreground-color "#93a1a1")
  '(smartrep-mode-line-active-bg (solarized-color-blend "#859900" "#073642" 0.2))
