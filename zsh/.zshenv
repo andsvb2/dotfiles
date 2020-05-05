@@ -48,9 +48,9 @@ fi
 
 # automatically remove duplicates from these arrays
 # adiciona entrada para infopath
-# typeset -U infopath infopath
-# path=("$HOME/.local/bin" "/usr/local/texlive/2020/bin/x86_64-linux" "$path[@]")
-# export PATH
+typeset -U path
+path=("$HOME/emacs-profiles/doom-emacs/bin" "$path[@]")
+export PATH
 
 # typeset -U manpath
 # manpath=("/usr/local/texlive/2020/texmf-dist/doc/man" "$manpath[@]")
