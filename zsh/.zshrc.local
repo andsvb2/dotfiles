@@ -343,7 +343,7 @@ alias cp="cp -i"                                                # Confirm before
 alias df='df -h'                                                # Human-readable sizes
 alias free='free -m'                                            # Show sizes in MB
 alias gitu='git add . && git commit && git push'
-alias updist='sudo pacman-mirrors -f 5 && sudo pacman -Syyuu && yay -Syyuu --aur'
+alias updist='sudo pacman-mirrors -f 5 && sudo pacman -Syu && yay -Syu --aur'
 alias uptex='sudo tlmgr --repository ctan update --self --all'
 alias meldiff='sudo DIFFPROG=meld pacdiff'
 alias E="SUDO_EDITOR=\"emacsclient -t -a emacs\" sudoedit"
