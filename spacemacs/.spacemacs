@@ -447,7 +447,7 @@ you should place your code here."
     ("#dc322f" "#cb4b16" "#b58900" "#546E00" "#B4C342" "#00629D" "#2aa198" "#d33682" "#6c71c4")))
  '(package-selected-packages
    (quote
-    (org-ref org-mime evil-matchit ace-link writeroom-mode visual-fill-column org-download markdown-toc markdown-mode helm-ag projectile pdf-tools tablist helm-bibtex bibtex-completion org-plus-contrib transient js2-mode helm magit dumb-jump company ivy helm-core auctex)))
+    (persp-mode use-package mmm-mode helm-projectile helm-make helm-c-yasnippet google-translate git-timemachine exec-path-from-shell evil-surround evil-nerd-commenter evil-magit evil-anzu anzu deft company-auctex column-enforce-mode aggressive-indent ace-window evil goto-chg flyspell-correct parsebib request popup yasnippet avy git-commit with-editor helm-swoop eyebrowse ebib hydra lv org-ref org-mime evil-matchit ace-link writeroom-mode visual-fill-column org-download markdown-toc markdown-mode helm-ag projectile pdf-tools tablist helm-bibtex bibtex-completion org-plus-contrib transient js2-mode helm magit dumb-jump company ivy helm-core auctex)))
  '(pos-tip-background-color "#073642")
  '(pos-tip-foreground-color "#93a1a1")
  '(smartrep-mode-line-active-bg (solarized-color-blend "#859900" "#073642" 0.2))
