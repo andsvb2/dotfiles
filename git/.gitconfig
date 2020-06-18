@@ -23,3 +23,5 @@
     	cmd = meld "$LOCAL" "$REMOTE"
 [tag]
 	forceSignAnnotated = true
+[pull]
+	rebase = false
