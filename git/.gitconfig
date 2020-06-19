@@ -2,7 +2,7 @@
 	email = svieira.anderson@gmail.com
 	name = Anderson S. Vieira
 	username = andsvb2
-	signingKey = 00EB730D50DEFBDE1D290A44CEE06754E4FAD3ED
+	signingkey = CEE06754E4FAD3ED
 [gc]
 	autoDetach = false
 [commit]
