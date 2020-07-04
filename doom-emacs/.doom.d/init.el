@@ -152,7 +152,6 @@
         +noter             ; enables org-noter integration
         ;; +pandoc            ; Enables pandoc integration into the Org exporter
         +roam)             ; Enables org-roam integration
-       ;;perl              ; write code no one else can comprehend
        ;;php               ; perl's insecure younger brother
        ;;plantuml          ; diagrams for confusing people more
        ;;purescript        ; javascript, but functional
