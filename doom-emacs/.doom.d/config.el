@@ -63,6 +63,7 @@
 ;; :ui zen
 (after! writeroom-mode
   (add-hook 'writeroom-global-effects 'writeroom-set-fullscreen))
+(setq +zen-text-scale 1) ;; correctly sets the text scale in zen mode.
 
 ;; :checkers spell
 (setq ispell-dictionary "pt_BR")
