@@ -48,26 +48,53 @@
 ;; - `map!' for binding new keys
 ;;
 ;; To get information about any of these functions/macros, move the cursor over
-;; the highlighted symbol at press 'K' (non-evil users must press 'C-c g k').
+;; the highlighted symbol at press 'K' (non-evil users must press 'C-c c k').
 ;; This will open documentation for it, including demos of how they are used.
 ;;
-;; You can also try 'gd' (or 'C-c g d') to jump to their definition and see how
+;; You can also try 'gd' (or 'C-c c d') to jump to their definition and see how
 ;; they are implemented.
 
-(setq-hook! 'TeX-mode-hook +spellcheck-immediately nil) ;; stop doom from immediately running a spell check on every tex mode file
+;; :ui deft
+(setq deft-recursive t
+      deft-use-filter-string-for-filename t
+      deft-default-extension "org"
+      deft-directory (concat org-directory "roam/"))
 
-(add-hook! 'TeX-mode-hook #'(writeroom-mode abbrev-mode hl-todo-mode))
-(setq +latex-viewers '(evince))
-
+;; :ui zen
 (after! writeroom-mode
   (add-hook 'writeroom-global-effects 'writeroom-set-fullscreen))
 
+;; :checkers spell
 (setq ispell-dictionary "pt_BR")
 
+;; :checkers grammmar
+(setq langtool-default-language "pt-BR")
+
+;; :lang latex
+(setq-hook! 'TeX-mode-hook +spellcheck-immediately nil) ;; stop doom from immediately running a spell check on every tex mode file
+(add-hook! 'TeX-mode-hook #'(writeroom-mode abbrev-mode hl-todo-mode))
+(setq +latex-viewers '(evince))
+
+;;; :lang org
+(remove-hook 'org-mode-hook #'org-superstar-mode)
+(setq org-roam-directory (concat org-directory "roam/")
+      org-roam-index-file "index.org"
+      ;; org-journal-encrypt-journal t
+      org-journal-date-prefix "#+TITLE: "
+      org-journal-file-format "%Y-%m-%d.org"
+      org-journal-dir (concat org-directory "roam/")
+      org-journal-date-format "%A, %d %B %Y"
+      org-journal-enable-agenda-integration t
+      org-noter-notes-search-path '("~/Dropbox/Documentos/org/roam/")
+      ;; org-ellipsis " ▼ "
+      org-superstar-headline-bullets-list '("#"))
+
+;; :$DOOMDIR/packages.el pkgbuild-mode
  (autoload 'pkgbuild-mode "pkgbuild-mode.el" "PKGBUILD mode." t)
  (setq auto-mode-alist (append '(("/PKGBUILD$" . pkgbuild-mode))
                                auto-mode-alist))
 
+;; bibtex.el: tentativa de configurar o gerador de chaves bibtex
 (setq! ;; bibtex-autokey-expand-strings t
        bibtex-autokey-names-stretch 1
        bibtex-autokey-name-case-convert-function (quote capitalize)
@@ -81,24 +108,3 @@
        bibtex-autokey-name-year-separator ":"
        ;; bibtex-autokey-year-title-separator ":"
        )
-
-(remove-hook 'org-mode-hook #'org-superstar-mode)
-
-;;; :ui deft
-(setq deft-recursive t
-      deft-use-filter-string-for-filename t
-      deft-default-extension "org"
-      deft-directory (concat org-directory "roam/"))
-
-;;; :lang org
-(setq org-roam-directory (concat org-directory "roam/")
-      org-roam-index-file "index.org"
-      ;; org-journal-encrypt-journal t
-      org-journal-date-prefix "#+TITLE: "
-      org-journal-file-format "%Y-%m-%d.org"
-      org-journal-dir (concat org-directory "roam/")
-      org-journal-date-format "%A, %d %B %Y"
-      org-journal-enable-agenda-integration t
-      org-noter-notes-search-path '("~/Dropbox/Documentos/org/roam/")
-      ;; org-ellipsis " ▼ "
-      org-superstar-headline-bullets-list '("#"))
