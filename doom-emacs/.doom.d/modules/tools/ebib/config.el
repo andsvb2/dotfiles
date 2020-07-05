@@ -45,7 +45,7 @@
                                   ))
 
 ;; bibtex.el: tentativa de configurar o gerador de chaves bibtex
-(setq! ;; bibtex-autokey-expand-strings t
+(setq  ;; bibtex-autokey-expand-strings t
        bibtex-autokey-names-stretch 1
        bibtex-autokey-name-case-convert-function (quote capitalize)
        bibtex-autokey-additional-names "EtAl"
