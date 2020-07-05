@@ -44,6 +44,22 @@
                                     ;; ("year"        "[-@%K%< %A%>]")))
                                   ))
 
+;; bibtex.el: tentativa de configurar o gerador de chaves bibtex
+(setq! ;; bibtex-autokey-expand-strings t
+       bibtex-autokey-names-stretch 1
+       bibtex-autokey-name-case-convert-function (quote capitalize)
+       bibtex-autokey-additional-names "EtAl"
+       bibtex-autokey-year-length 4
+       bibtex-autokey-titleword-ignore (quote ("O" "Da" "Do" "Dos"))
+       bibtex-autokey-titlewords 3
+       bibtex-autokey-titleword-length (quote infty)
+       bibtex-autokey-titleword-case-convert-function (quote capitalize)
+       bibtex-autokey-titleword-separator ""
+       bibtex-autokey-name-year-separator ":"
+       ;; bibtex-autokey-year-title-separator ":"
+       )
+
+
 ;; Cópia do arquivo original em <https://github.com/patrl/.doom.d/blob/master/modules/tools/ebib/config.el>
 ;;
 ;;;;; tools/ebib/config.el -*- lexical-binding: t; -*-
