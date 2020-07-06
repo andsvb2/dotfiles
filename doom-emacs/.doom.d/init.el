@@ -147,8 +147,8 @@
        ;;nix               ; I hereby declare "nix geht mehr!"
        ;;ocaml             ; an objective camel
        (org                ; organize your plain life in plain text
-        +gnuplot           ; enables rendering images from gnuplot src blocks or plotting tables
-        +journal           ; enables org-journal integration
+        ;; +gnuplot           ; enables rendering images from gnuplot src blocks or plotting tables
+        ;; +journal           ; enables org-journal integration
         +noter             ; enables org-noter integration
         ;; +pandoc            ; Enables pandoc integration into the Org exporter
         +roam)             ; Enables org-roam integration
