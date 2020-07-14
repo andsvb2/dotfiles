@@ -54,6 +54,9 @@
 ;; You can also try 'gd' (or 'C-c c d') to jump to their definition and see how
 ;; they are implemented.
 
+;; :completion company
+(setq company-idle-delay nil)
+
 ;; :ui deft
 (setq deft-recursive t
       deft-use-filter-string-for-filename t
