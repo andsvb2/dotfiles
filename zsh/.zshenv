@@ -49,7 +49,7 @@ fi
 # automatically remove duplicates from these arrays
 # adiciona entrada para infopath
 typeset -U path
-path=("$HOME/emacs-profiles/doom-emacs/bin" "$path[@]")
+path=("$HOME/.emacs.d/bin" "$path[@]")
 export PATH
 
 # typeset -U manpath
