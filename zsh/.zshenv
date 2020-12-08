@@ -9,11 +9,10 @@ export XDG_CONFIG_HOME="$HOME/.config"
 export XDG_DATA_HOME="$HOME/.local/share"
 
 # Tools
-export EDITOR='emacsclient -t'
-export VISUAL='emacsclient'
-export HGMERGE='emacsclient -t'
-export ALTERNATE_EDITOR='nano'
-export TERMINAL='xfce4-terminal'
+# export EDITOR='emacsclient -t'
+# export VISUAL='emacsclient'
+# export HGMERGE='emacsclient -t'
+# export ALTERNATE_EDITOR='nano'
 export BROWSER='firefox'
 
 # QT e GTK
@@ -37,7 +36,7 @@ export LC_ADDRESS="pt_BR.UTF-8"
 export LC_TELEPHONE="pt_BR.UTF-8"
 export LC_MEASUREMENT="pt_BR.UTF-8"
 export LC_IDENTIFICATION="pt_BR.UTF-8"
-export LC_ALL=""
+export LC_ALL="pt_BR.UTF-8"
 
 #  Executables PATH
 
@@ -49,7 +48,7 @@ fi
 # automatically remove duplicates from these arrays
 # adiciona entrada para infopath
 typeset -U path
-path=("$HOME/.emacs.d/bin" "$path[@]")
+path=("$HOME/.config/emacs/bin" "$path[@]")
 export PATH
 
 # typeset -U manpath
