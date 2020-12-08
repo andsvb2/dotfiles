@@ -1,2 +1,4 @@
 
 *.AppImage
+
+emacs/.config/emacs
