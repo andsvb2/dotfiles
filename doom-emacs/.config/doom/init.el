@@ -26,10 +26,11 @@
        (ivy +icons)                 ; a search engine for love and life
 
        :ui
-       deft              ; notational velocity for Emacs
+       ;;deft              ; notational velocity for Emacs
        doom              ; what makes DOOM look the way it does
        doom-dashboard    ; a nifty splash screen for Emacs
        ;; doom-quit         ; DOOM quit-message prompts when you quit Emacs
+       ;;(emoji +unicode)  ; 🙂
        ;;fill-column       ; a `fill-column' indicator
        hl-todo           ; highlight TODO/FIXME/NOTE/DEPRECATED/HACK/REVIEW
        ;;hydra
@@ -92,7 +93,7 @@
        (eval +overlay)     ; run code, run (also, repls)
        ;;gist              ; interacting with github gists
        lookup              ; navigate your code and its documentation
-       ;;lsp
+       lsp
        magit             ; a git porcelain for Emacs
        ;;make              ; run make tasks from Emacs
        ;;pass              ; password manager for nerds
@@ -108,8 +109,8 @@
        ;; biblio              ; modulo ainda nao incorporado ao init.example.el
 
        :os
-       ;; (:if IS-MAC macos)  ; improve compatibility with macOS
-       ;; tty                 ; improve the terminal Emacs experience
+       (:if IS-MAC macos)  ; improve compatibility with macOS
+       ;;tty               ; improve the terminal Emacs experience
 
        :lang
        ;;agda              ; types of types of types of types...
@@ -119,7 +120,7 @@
        ;;coq               ; proofs-as-programs
        ;;crystal           ; ruby at the speed of c
        ;;csharp            ; unity, .NET, and mono shenanigans
-       ;;data              ; config/data formats
+       data              ; config/data formats
        ;;(dart +flutter)   ; paint ui and not much else
        ;;elixir            ; erlang done right
        ;;elm               ; care for a cup of TEA?
@@ -133,15 +134,14 @@
        ;;(go +lsp)         ; the hipster dialect
        ;;(haskell +dante)  ; a language that's lazier than I am
        ;;hy                ; readability of scheme w/ speed of python
-       ;;idris             ;
+       ;;idris             ; a language you can depend on
        ;;json              ; At least it ain't XML
        ;;(java +meghanada) ; the poster child for carpal tunnel syndrome
-       ;;javascript        ; all(hope(abandon(ye(who(enter(here))))))
+       (javascript +lsp)        ; all(hope(abandon(ye(who(enter(here))))))
        ;;julia             ; a better, faster MATLAB
        ;;kotlin            ; a better, slicker Java(Script)
        (latex         ; writing papers in Emacs has never been so fun
         +latexmk      ; Use LatexMk instead of LaTeX to compile documents
-        ;; +fold         ; Use TeX-fold (from auctex) to fold LaTeX macros to unicode
         )
        ;;lean
        ;;factor
@@ -152,22 +152,19 @@
        ;;nix               ; I hereby declare "nix geht mehr!"
        ;;ocaml             ; an objective camel
        (org                ; organize your plain life in plain text
-        ;; +gnuplot           ; enables rendering images from gnuplot src blocks or plotting tables
-        ;; +journal           ; enables org-journal integration
         +noter             ; enables org-noter integration
         +pandoc)            ; Enables pandoc integration into the Org exporter
-        ;; +roam)             ; Enables org-roam integration
        ;;php               ; perl's insecure younger brother
        ;;plantuml          ; diagrams for confusing people more
        ;;purescript        ; javascript, but functional
-       ;;python            ; beautiful is better than ugly
+       (python +lsp)            ; beautiful is better than ugly
        ;;qt                ; the 'cutest' gui framework ever
        ;;racket            ; a DSL for DSLs
        ;;raku              ; the artist formerly known as perl6
        ;;rest              ; Emacs as a REST client
        ;;rst               ; ReST in peace
        ;;(ruby +rails)     ; 1.step {|i| p "Ruby is #{i.even? ? 'love' : 'life'}"}
-       ;;rust              ; Fe2O3.unwrap().unwrap().unwrap().unwrap()
+       rust              ; Fe2O3.unwrap().unwrap().unwrap().unwrap()
        ;;scala             ; java, but good
        ;;scheme            ; a fully conniving family of lisps
        sh                ; she sells {ba,z,fi}sh shells on the C xor
@@ -175,7 +172,7 @@
        ;;solidity          ; do you need a blockchain? No.
        ;;swift             ; who asked for emoji variables?
        ;;terra             ; Earth and Moon in alignment for performance.
-       ;;web               ; the tubes
+       (web +lsp)               ; the tubes
        ;;yaml              ; JSON, but readable
 
        :email
@@ -185,6 +182,8 @@
 
        :app
        ;;calendar
+       ;;emms
+       ;;everywhere        ; *leave* Emacs!? You must be joking
        ;;irc               ; how neckbeards socialize
        ;;(rss +org)        ; emacs as an RSS reader
        ;;twitter           ; twitter client https://twitter.com/vnought
@@ -193,5 +192,5 @@
        ;;literate
        (default +bindings +smartparens))
 
-(when noninteractive
-  (add-to-list 'doom-env-whitelist "^SSH_"))
+;; (when noninteractive
+  ;; (add-to-list 'doom-env-whitelist "^SSH_"))
