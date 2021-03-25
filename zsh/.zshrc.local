@@ -328,7 +328,7 @@ fi
 #getanames ()  { perl -ne 'while ( m/a name="([^"]*)"/gc ) { print $1, "\n"; }' $* }
 #getforms ()   { perl -ne 'while ( m:(\</?(input|form|select|option).*?\>):gic ) { print $1, "\n"; }' $* }
 #getstrings () { perl -ne 'while ( m/"(.*?)"/gc ) { print $1, "\n"; }' $*}
-#getanchors () { perl -ne 'while ( m/«([^«»\n]+)»/gc ) { print $1, "\n"; }' $* }
+#getanchors () { perl -ne 'while ( m/\AB([^\AB\BB\n]+)\BB/gc ) { print $1, "\n"; }' $* }
 #showINC ()    { perl -e 'for (@INC) { printf "%d %s\n", $i++, $_ }' }
 #vimpm ()      { vim `perldoc -l $1 | sed -e 's/pod$/pm/'` }
 #vimhelp ()    { vim -c "help $1" -c on -c "au! VimEnter *" }
@@ -343,8 +343,8 @@ alias cp="cp --reflink=auto -i" # Confirm before overwriting something
 alias df='df -h'                # Human-readable sizes
 alias free='free -m'            # Show sizes in MB
 alias gitu='git add . && git commit && git push'
-alias updist='sudo pacman-mirrors -c Brazil -m rank && sudo pacman -Syu && yay -Syua'
-alias uptex='sudo tlmgr --repository ctan update --self --all'
+alias updist='sudo reflector --verbose -c BR --latest 10 --sort rate --save /etc/pacman.d/mirrorlist && sudo pacman -Syu && yay -Syua'
+#alias uptex='sudo tlmgr --repository ctan update --self --all'
 alias meldiff='sudo DIFFPROG=meld pacdiff'
 # alias E="SUDO_EDITOR=\"emacsclient -t -a emacs\" sudoedit"
 # alias e="emacsclient -t"
@@ -367,3 +367,10 @@ zmodload zsh/terminfo
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=20
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=8'
+
+if ! pgrep -u "$USER" ssh-agent > /dev/null; then
+    ssh-agent -t 1h > "$XDG_RUNTIME_DIR/ssh-agent.env"
+fi
+if [[ ! "$SSH_AUTH_SOCK" ]]; then
+    source "$XDG_RUNTIME_DIR/ssh-agent.env" >/dev/null
+fi
