@@ -77,34 +77,23 @@
 ;; :lang latex
 (setq-hook! 'TeX-mode-hook +spellcheck-immediately nil) ;; stop doom from immediately running a spell check on every tex mode file
 (add-hook! 'TeX-mode-hook #'(writeroom-mode abbrev-mode hl-todo-mode))
-(setq +latex-viewers '(evince))
+(setq +latex-viewers '(okular))
 
 ;;; :lang org
 (remove-hook 'org-mode-hook #'org-superstar-mode)
-(setq org-roam-directory (concat org-directory "roam/")
-      org-roam-index-file "index.org"
-      ;; org-journal-encrypt-journal t
-      org-journal-date-prefix "#+TITLE: "
-      org-journal-file-format "%Y-%m-%d.org"
-      org-journal-dir (concat org-directory "roam/")
-      org-journal-date-format "%A, %d %B %Y"
-      org-journal-enable-agenda-integration t
-      org-noter-notes-search-path '("~/Dropbox/Documentos/org/roam/")
-      ;; org-ellipsis " ▼ "
-      org-superstar-headline-bullets-list '("#"))
+;; (setq org-roam-directory (concat org-directory "roam/")
+;;       org-roam-index-file "index.org"
+;;       ;; org-journal-encrypt-journal t
+;;       org-journal-date-prefix "#+TITLE: "
+;;       org-journal-file-format "%Y-%m-%d.org"
+;;       org-journal-dir (concat org-directory "roam/")
+;;       org-journal-date-format "%A, %d %B %Y"
+;;       org-journal-enable-agenda-integration t
+;;       org-noter-notes-search-path '("~/Dropbox/Documentos/org/roam/")
+;;       ;; org-ellipsis " ▼ "
+;;       org-superstar-headline-bullets-list '("#"))
 
 ;; :$DOOMDIR/packages.el pkgbuild-mode
  (autoload 'pkgbuild-mode "pkgbuild-mode.el" "PKGBUILD mode." t)
  (setq auto-mode-alist (append '(("/PKGBUILD$" . pkgbuild-mode))
                                auto-mode-alist))
-
-(require 'iso-transl)
-(prefer-coding-system 'utf-8)
-(set-default-coding-systems 'utf-8)
-(set-terminal-coding-system 'utf-8)
-(set-keyboard-coding-system 'utf-8)
-;; backwards compatibility as default-buffer-file-coding-system
-;; is deprecated in 23.2.
-(if (boundp 'buffer-file-coding-system)
-    (setq-default buffer-file-coding-system 'utf-8)
-  (setq default-buffer-file-coding-system 'utf-8))
