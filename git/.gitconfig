@@ -10,7 +10,7 @@
 [core]
 	editor = emacsclient -t
 [color]
-	ui = true
+	ui = auto
 [credential]
 	helper = /usr/lib/git-core/git-credential-libsecret
 [push]
@@ -25,3 +25,5 @@
 	forceSignAnnotated = true
 [pull]
 	rebase = false
+[init]
+	defaultBranch = main

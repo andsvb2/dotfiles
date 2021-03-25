@@ -2,3 +2,5 @@
 *.AppImage
 
 emacs/.config/emacs
+
+ssh/.ssh/
