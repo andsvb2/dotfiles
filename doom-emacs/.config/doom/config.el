@@ -77,7 +77,7 @@
 ;; :lang latex
 (setq-hook! 'TeX-mode-hook +spellcheck-immediately nil) ;; stop doom from immediately running a spell check on every tex mode file
 (add-hook! 'TeX-mode-hook #'(writeroom-mode abbrev-mode hl-todo-mode))
-(setq +latex-viewers '(okular))
+(setq +latex-viewers '(evince))
 
 ;;; :lang org
 (remove-hook 'org-mode-hook #'org-superstar-mode)
